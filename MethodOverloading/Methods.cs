@@ -1,16 +1,13 @@
-﻿namespace MethodOverloading
-{
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(Add(1, 2));
-            Console.WriteLine(Add(1.2m, 3.4m));
-            Console.WriteLine(Add(5, 6, true));
-            Console.WriteLine(Add(5, 6, false));
-            Console.WriteLine(Add(0, 1, true));
-        }
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace MethodOverloading
+{
+    internal class Methods
+    {
         public static int Add(int a, int b)
         {
             return a + b;
@@ -30,13 +27,11 @@
             else if (isTrue && (c + d) == 1)
             {
                 return $"{c + d} dollar";
-            }
+            } 
             else
             {
                 return $"{c + d}";
             }
         }
-
-
     }
 }
